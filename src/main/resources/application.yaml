@@ -4,8 +4,8 @@ app:
   test-mail: ${MAIL_USERNAME}
   templates-update-cache: 5s
   mail-sending-props:
-    core-pool-size: ${MAIL_CORE_POOL_SIZE}
-    max-pool-size: ${MAIL_MAX_POOL_SIZE}
+    core-pool-size: 8
+    max-pool-size: 100
 
 spring:
   jpa:
