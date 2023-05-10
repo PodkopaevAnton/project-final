@@ -91,7 +91,7 @@ spring:
   thymeleaf.check-template-location: false
 
   config:
-    location: app.properties
+    location: application.properties
 
 
 logging:
