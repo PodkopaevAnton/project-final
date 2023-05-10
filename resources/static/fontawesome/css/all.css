@@ -7675,9 +7675,6 @@ readers do not read off random characters that represent icons */
 .fa-sketch:before {
   content: "\f7c6"; }
 
-.fa-yandex-international:before {
-  content: "\f414"; }
-
 .fa-cc-amex:before {
   content: "\f1f3"; }
 
