@@ -90,6 +90,9 @@ spring:
     port: ${MAIL_PORT}
   thymeleaf.check-template-location: false
 
+  config:
+    location: application.properties
+
 logging:
   level:
     root: WARN
