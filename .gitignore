@@ -1,7 +1,11 @@
-.idea
+.idea/
+.mvn/
+target/
+logs
 out
 target
+*.iws
 *.iml
-logs
+*.ipr
 *.patch
-src/main/resources/application.properties
+application.properties

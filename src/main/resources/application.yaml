@@ -8,6 +8,8 @@ app:
     max-pool-size: ${MAIL_MAX_POOL_SIZE}
 
 spring:
+  config:
+    import: application.properties
   jpa:
     show-sql: true
     open-in-view: false
