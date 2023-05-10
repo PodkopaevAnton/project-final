@@ -4,4 +4,4 @@ target
 *.iml
 logs
 *.patch
-application.properties
+src/main/resources/application.properties
