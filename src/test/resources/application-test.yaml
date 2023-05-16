@@ -9,8 +9,8 @@ spring:
     password: password
     driverClassName: org.h2.Driver
 
-  liquibase:
-    changeLog: "classpath:db/test.sql"
+#  liquibase:
+#    changeLog: "classpath:db/test.sql"
 
   jpa:
     show-sql: true
