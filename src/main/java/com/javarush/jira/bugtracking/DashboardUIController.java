@@ -24,6 +24,7 @@ import java.util.stream.Collectors;
 public class DashboardUIController {
 
     private TaskService taskService;
+    private UserBelongService userBelongService;
 
     @GetMapping("/") // index page
     public String getAll(Model model) {
@@ -37,6 +38,12 @@ public class DashboardUIController {
     @PostMapping("/tasks/{id}/tags")
     public String addTags(@PathVariable long id, @RequestBody(required = false) Set<String> tags){
         taskService.addTagsToTask(tags,id);
+        return "redirect:/";
+    }
+
+    @PostMapping("/tasks/{id}/users/{userId}") // index page
+    public String addUserSubscribe(@PathVariable long id,@PathVariable long userId) {
+        userBelongService.subscribeToTask(id,userId);
         return "redirect:/";
     }
 }
